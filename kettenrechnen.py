@@ -65,9 +65,9 @@ while Correct == True:
     elif Op == "-" and CompCalc >= 0:
         valid = True
     elif Op == "*" and CompCalc <= 200:
-        vali = True
+        valid = True
     elif Op == "/" and OneNum % TwoNum == 0:
-        valid
+        valid = True
 
 #print answer
     Question = print_calc()
