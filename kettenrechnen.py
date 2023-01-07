@@ -20,18 +20,30 @@ def gen_rand_calc():
         Calc = "/"
         return Calc
 
-Correct = bool(True)
+Repeat = bool(True)
 
 Score = int(0)
 
 
-while Correct == True:
+while Repeat == True:
+
 # Defines parts of the calculation
 
-    FirstNum = gen_rand_int(1, 100)
-    Operator = gen_rand_calc()
-    SecNum = gen_rand_int(2, 10)
+    if Score == 0:
+        FirstNum = gen_rand_int(1, 100)
+    elif Score > 0:
+        FirstNum = int(UserCalc)
 
+    Operator = gen_rand_calc()
+
+    if Operator == "+":
+        SecNum = gen_rand_int(5, 50)
+    elif Operator == "-":
+        SecNum = gen_rand_int(5, 40)
+    elif Operator == "*":
+        SecNum = gen_rand_int(2, 10)
+    elif Operator == "/":
+        SecNum = gen_rand_int(2, 10)
 
 #generate calculation partss
     OneNum = FirstNum
@@ -82,13 +94,20 @@ while Correct == True:
 #check if answers match up
     
     if CompCalc == UserCalc:
-        Correct = True
+        Repeat = True
         print("Correct!")
         Score += 1
     else:
-        Correct = False
         print("Nope - Game Over")
-        break
+        print("Your Score: ", Score)
+        cont = str(input("Try Again?(y/n):"))
+        if cont == "y":
+            Score = 0
+            continue
+        elif cont == "n":
+            break
+        else:
+            print("error invalid input, quitting")
+            break
 
-print("Your Score: ", Score)
-
+print("Until next time!")
