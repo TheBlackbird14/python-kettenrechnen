@@ -90,7 +90,7 @@ while Repeat == True:
         continue
 
 #take user answer
-    UserCalc = Element(UserCalc).element.value
+    UserCalc = Element("UserCalc").element.value
 
 #check if answers match up
     
