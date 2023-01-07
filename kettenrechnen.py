@@ -101,14 +101,14 @@ while Repeat == True:
     else:
         print("Nope - Game Over")
         print("Your Score: ", Score)
-        cont = str(input("Try Again?(y/n):"))
-        if cont == "y":
-            Score = 0
-            continue
-        elif cont == "n":
-            break
-        else:
-            print("error invalid input, quitting")
+#        cont = str(input("Try Again?(y/n):"))
+#        if cont == "y":
+#            Score = 0
+#            continue
+#        elif cont == "n":
+#            break
+#        else:
+#            print("error invalid input, quitting")
             break
 
 print("Until next time!")
