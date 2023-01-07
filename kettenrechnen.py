@@ -1,4 +1,5 @@
 import random 
+from js import console
 
 def gen_rand_int(min, max):
     RandInt = random.randint(min, max)
@@ -89,7 +90,7 @@ while Repeat == True:
         continue
 
 #take user answer
-    UserCalc = int(input("="))
+    UserCalc = Element(UserCalc).element.value
 
 #check if answers match up
     
