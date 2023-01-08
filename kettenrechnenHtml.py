@@ -100,7 +100,7 @@ while Repeat == True:
         else:
             print("Nope - Game Over")
             print("Your Score: ", Score)
-            break
+            quit()
 #        cont = str(input("Try Again?(y/n):"))
 #        if cont == "y":
 #            Score = 0
