@@ -1,5 +1,4 @@
 import random 
-from js import console
 
 def gen_rand_int(min, max):
     RandInt = random.randint(min, max)
@@ -90,7 +89,7 @@ while Repeat == True:
         continue
 
 #take user answer
-    UserCalc = Element("UserCalc").element.value
+    UserCalc = int(input("="))
 
 #check if answers match up
     
@@ -101,14 +100,14 @@ while Repeat == True:
     else:
         print("Nope - Game Over")
         print("Your Score: ", Score)
-#        cont = str(input("Try Again?(y/n):"))
-#        if cont == "y":
-#            Score = 0
-#            continue
-#        elif cont == "n":
-#            break
-#        else:
-#            print("error invalid input, quitting")
+        cont = str(input("Try Again?(y/n):"))
+        if cont == "y":
+            Score = 0
+            continue
+        elif cont == "n":
+            break
+        else:
+            print("error invalid input, quitting")
         break
 
 print("Until next time!")
