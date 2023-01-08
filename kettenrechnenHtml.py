@@ -84,7 +84,7 @@ while Repeat == True:
 #print question
     Question = print_calc()
     if valid == True:
-        print(Question)
+        pyscript.write(Question)
     else:
         continue
 
@@ -100,6 +100,7 @@ while Repeat == True:
         else:
             print("Nope - Game Over")
             print("Your Score: ", Score)
+            break
 #        cont = str(input("Try Again?(y/n):"))
 #        if cont == "y":
 #            Score = 0
@@ -108,6 +109,6 @@ while Repeat == True:
 #            break
 #        else:
 #            print("error invalid input, quitting")
-        break
+        
 
 print("Until next time!")
